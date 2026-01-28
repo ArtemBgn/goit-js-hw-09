@@ -16,3 +16,51 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+
+body {
+  background-color: #ffffff;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  min-width: 660px;
+  max-width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /**/
+  row-gap: 20px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 0;
+}
+
+.gallery-item {
+  width: calc((100% - 40px) / 3);
+}
+
+.gallery-link {
+  background-color: blueviolet;
+}
+
+.gallery-image {
+  background-color: blueviolet;
+}
