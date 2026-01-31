@@ -64,3 +64,66 @@ img {
 .gallery-image {
   background-color: blueviolet;
 }
+
+/*modal window style*/
+
+.sl-wrapper {
+  background: rgba(46, 47, 66, 0.8);
+}
+.sl-wrapper .sl-counter {
+  color: #fff;
+}
+
+/*section form*/
+
+.feedback-form {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 24px auto;
+  width: 408px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+input {
+  height: 40px;
+}
+input:hover,
+textarea:hover {
+  border: 1px solid #000;
+}
+input,
+textarea {
+  margin-top: 8px;
+  width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+button {
+  margin-top: 8px;
+  width: 95px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e75ff;
+  border: 1px solid #4e75ff;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+  border: 1px solid #6c8cff;
+}
