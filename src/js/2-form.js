@@ -21,11 +21,14 @@ formEl.addEventListener('input', e => {
 
 formEl.addEventListener('submit', e => {
   e.preventDefault();
-  (isNull(inpEl) || isNull(textAreaEl)
-    ? alert('Fill please all fields')
-    : console.log(formData),
-    toCleanValueEl(inpEl, textAreaEl),
-    localStorage.removeItem('feedback-form-state'));
+  if (isNull(inpEl) || isNull(textAreaEl)) {
+    alert('Fill please all fields');
+  } else {
+    console.log(formData);
+    resetProp(formData);
+    toCleanValueEl(inpEl, textAreaEl);
+    localStorage.removeItem('feedback-form-state');
+  }
 });
 
 function isNull(el) {
@@ -35,5 +38,12 @@ function isNull(el) {
 function toCleanValueEl() {
   for (let i = 0; i < arguments.length; i++) {
     arguments[i].value = '';
+  }
+}
+
+function resetProp(object) {
+  const tmpKeys = Object.keys(object);
+  for (let i = 0; i < tmpKeys.length; i++) {
+    object[tmpKeys[i]] = '';
   }
 }
